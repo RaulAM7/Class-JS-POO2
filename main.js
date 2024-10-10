@@ -11,7 +11,6 @@ console.log(rebootAccount)
 rebootAccount.balance = 1000000
 console.log(rebootAccount.balance)
 
-
 // Objects Literals
 const myObjectLiteral = {
     //Properties
@@ -35,8 +34,6 @@ const myObjectLiteral = {
 }
 myObjectLiteral.showConfig()
 myObjectLiteral.updateConfig('Pablito')
-
-
 
 // Classes & Private Fields
 class BankingAccount {
@@ -83,15 +80,10 @@ class BankingAccount {
         }
     }
 }
-
-
 const newAccount = new BankingAccount ('Raul','EUR',1000)
-
 newAccount.settingBalance = 100
 newAccount.deposit = 50
 newAccount.withdraw = 100
 newAccount.transferToAnotherAccount(10, 'Jose')
-
-
 console.log(newAccount)
 console.log(newAccount.showBalance)
