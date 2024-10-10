@@ -1,3 +1,4 @@
+
 // Example de Encapsulation
 class cuentaBanco {
     constructor (owner, currency="EUR", initialBalance=0) {
@@ -87,3 +88,6 @@ newAccount.withdraw = 100
 newAccount.transferToAnotherAccount(10, 'Jose')
 console.log(newAccount)
 console.log(newAccount.showBalance)
+
+
+console.log(square(2));

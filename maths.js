@@ -1,5 +1,5 @@
+
 //USING COMMON.JS TO EXPORT
-//MATHS.JS
 const PI = Math.PI;
 
 // Using module.exports
@@ -11,13 +11,18 @@ exports.circumference = function (r) { return 2 * PI * r }
 
 
 //USING ESM TO EXPORT
-
-const sqrt = Math.sqrt
-
-export function square(x){
-    return x*x
+//MATHS.JS
+ class MyMaths{
+    constructor () {
+    }
+    add(x,y){return x+y}
+    rest(x,y){return x-y}
 }
 
-export function diagonal(x,y){
-    return sqrt(square(x) + square(y))
+
+ const mathsAlternative = {
+    add(x, y) { return x + y },
+    rest(x, y) { return x - y }
 }
+
+export {MyMaths, mathsAlternative}
